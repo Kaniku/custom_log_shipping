@@ -30,7 +30,7 @@ get_value = get_one.get('log_name')
 connSqlServer = pyodbc.connect(driver='{SQL Server Native Client 11.0}',
                                server='127.0.0.1,1432',
                                database='master',
-                               uid='sa',pwd='AEdCC.b9',
+                               uid='sa',pwd='your_password',
                                autocommit=True)
 
 restore = f"RESTORE LOG [programming-in-db] FROM  DISK = N'C:\get_tbd\{get_value}.bak' WITH  STANDBY = 'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\programming-in-db_rollback_undo.bak'"
