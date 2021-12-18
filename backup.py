@@ -7,7 +7,7 @@ from pydrive.drive import GoogleDrive
 connSqlServer = pyodbc.connect(driver='{SQL Server Native Client 11.0}',
                                server='127.0.0.1,1433',
                                database='master',
-                               uid='sa',pwd='AEdCC.b9',
+                               uid='sa',pwd='your_password',
                                autocommit=True)
 
 log_time = datetime.datetime.now().strftime("%d%m%y_%H%M%S")
